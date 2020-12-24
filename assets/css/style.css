@@ -1,0 +1,596 @@
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 10vh;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    height: 100px;
+    z-index: 999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .36)
+}
+
+.menu {
+    line-height: 90px;
+}
+
+.menu a {
+    margin-right: 40px;
+    transition: 0.4s;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 44px;
+    color: #242f51;
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 70px;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #333;
+}
+
+.menu .active {
+    color: #242f51;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+@media screen and (max-width:1025px) {
+    .menu a {
+        color: #242f51;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin-right: 100px;
+        transition: 0.4s;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 32px;
+    }
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+    .show-menu-btn i {
+        line-height: 100px !important;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f5e2;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+        z-index: 20
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+    }
+    #chk:checked~.menu {
+        right: 0;
+    }
+    #chk:checked~.menu {
+        right: 0 !important;
+    }
+    .col-sm-2 {
+        max-width: 50% !important;
+        display: inline-block;
+    }
+    .col-sm-10 {
+        width: 60%;
+        display: inline-block;
+    }
+}
+
+section {
+    padding: 60px 0
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 28px;
+    color: #242f51;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    margin: auto;
+}
+
+.companiesimg img {
+    padding: 20px
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #242f51;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #242f51;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #616368;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.redcolor {
+    font-size: 20px;
+    line-height: 58px;
+    color: #f55767;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.bluecolor {
+    font-size: 20px;
+    line-height: 58px;
+    color: #2563ff;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.greencolor {
+    font-size: 20px;
+    line-height: 58px;
+    color: #40975f;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+button {
+    background-color: #2500f9;
+    border-radius: 29px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    border: 1px solid #2500f9;
+    width: 200px;
+    height: 57px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #2500f9;
+    border: 1px solid #2500f9;
+    transition: 0.5s
+}
+
+.h3 {
+    font-size: 20px !important;
+    line-height: 58px;
+    color: #242f51;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin-top: 20px
+}
+
+.desktop-bottom .menu a {
+    color: #fff !important
+}
+
+.socail-media i:hover {
+    color: #fff
+}
+
+.socail-media i {
+    font-size: 16px;
+    color: #fff
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.card-header {
+    background-color: #f5f7fa;
+    padding: 20px 30px;
+    border: 0px solid transparent !important;
+}
+
+.card-header a {
+    font-size: 20px;
+    color: #242f51;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.collapse {
+    background-color: #f5f7fa;
+    border: 0px solid transparent;
+}
+
+h5 button {}
+
+.card {
+    border: 0px solid transparent !important;
+    margin-bottom: 20px !important
+}
+
+.btn {
+    font-size: 20px;
+    line-height: 48px;
+    color: #242f51;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: left;
+    border: 0px solid transparent !important;
+    padding: 0 30px;
+    width: 100%
+}
+
+.card-body {
+    font-size: 16px;
+    line-height: 26px;
+    color: #616368;
+    font-weight: 400;
+    font-family: "Poppins";
+    padding: 40px 30px;
+    border: 0px solid transparent !important;
+}
+
+.card-header>a[aria-expanded=true]:before {
+    float: right!important;
+    font-family: FontAwesome;
+    content: "\f068 "!important;
+    padding-right: 5px;
+    color: #000;
+    float: right;
+}
+
+.card-header>a[aria-expanded=false]:before {
+    float: right!important;
+    font-family: FontAwesome;
+    content: "\f067 "!important;
+    padding-right: 5px;
+    color: #000;
+    float: right;
+}
+
+.nav-link.active {
+    background-color: #2500f9 !important;
+    border-radius: 24px;
+    text-align: center;
+    padding: 5px 40px;
+    color: #fff !important
+}
+
+.nav-link {
+    padding: 5px 40px;
+    font-size: 16px;
+    line-height: 44px;
+    color: #616368;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.item {
+    border-radius: 9px;
+    filter: drop-shadow(3.837px 54.866px 31px rgba(144, 163, 177, 0.18));
+    background-color: #ffffff;
+    padding: 50px 30px;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+.feedback-slider .item {
+    border: 0px solid transparent !important;
+    border-radius: 9px;
+    filter: none;
+    padding: 0px;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #fff
+}
+
+.nav-tabs {
+    position: relative;
+    margin-left: 30%;
+    vertical-align: middle;
+}
+
+.nav-tabs .nav-link {
+    border: 0px solid #fff;
+}
+
+.hero {
+    margin-top: 20%
+}
+
+@media (max-width: 480px) {
+    .feedback-slider .item {
+        padding-left: 20px
+    }
+    .money h2 {
+        margin-top: 0px !important
+    }
+    section {
+        padding: 30px 20px;
+    }
+    header .col-sm-3 {
+        width: 48%;
+        display: inline-block;
+    }
+    header .col-sm-9 {
+        width: 50%;
+        display: inline-block;
+    }
+    .hero h2 {
+        margin-top: 10%
+    }
+    button {
+        display: block
+    }
+    .watch-video {
+        margin-top: 20px !important;
+        position: relative;
+        top: 25px;
+        text-align: center;
+        left: 78px;
+    }
+    .hero-banner {
+        margin-top: 20%
+    }
+    h2 {
+        margin-top: 50px;
+    }
+    .block-1 {
+        margin-left: 0% !important
+    }
+    h2 {
+        font-size: 30px !important
+    }
+    .item {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0px !important
+    }
+    .downloadapp {
+        position: relative !important;
+        margin-top: 20px
+    }
+    button {
+        margin: auto !important;
+        text-align: center;
+    }
+    nav-tabs {
+        margin-left: 10% !important;
+    }
+    .whyshouldapp {
+        text-align: center !important;
+        margin: auto !important;
+    }
+    footer header {
+        display: none
+    }
+    .hero span {
+        display: block;
+        padding: 10px 20px !important
+    }
+}
+
+.checked {
+    color: orange;
+}
+
+.testimonal-1 {}
+
+.money h2 {
+    font-size: 60px;
+    line-height: 58px;
+    color: #242f51;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.money h2 span {
+    font-size: 18px;
+    line-height: 28px;
+    color: #999ca5;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.userfriendly {
+    font-size: 20px;
+    line-height: 58px;
+    color: #242f51;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.hero span {
+    font-size: 18px;
+    line-height: 28px;
+    color: #242f51;
+    font-weight: 400;
+    font-family: "Poppins";
+    position: relative;
+    bottom: 23px;
+    padding: 10px 28px;
+    border-radius: 29px;
+    margin-left: -1%;
+    background-color: #ddd
+}
+
+.tickimg {
+    background-color: #fda925;
+    padding: 10px;
+    border-radius: 50px
+}
+
+.watch-video {
+    color: #2500f9
+}
+
+.fastperformance {
+    background-color: #ffecef;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px
+}
+
+.prototype {
+    background-color: #f3f3ff;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px
+}
+
+.vector {
+    background-color: #e3ffed;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px
+}
+
+.automative {
+    background-color: #ffecef;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px
+}
+
+.network {
+    background-color: #f3f3ff;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px
+}
+
+.bigger {
+    background-color: #e3ffed;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px
+}
+
+.customer-support {
+    background-color: #ffecef;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+}
+
+.ux-planning {
+    background-color: #f4f4ff;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+}
+
+.customization {
+    background-color: #f4f4ff;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+}
+
+.cloudstorage {
+    background-color: #fff6d3;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+}
+
+.timeaward {}
+
+.app-developemnt {
+    background-color: #ffecef;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+}
+
+.timeaward {
+    background-color: #f4f4ff;
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+}
